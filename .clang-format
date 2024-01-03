@@ -1,0 +1,9 @@
+---
+BasedOnStyle: LLVM
+AllowShortBlocksOnASingleLine: true
+AllowShortFunctionsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLambdasOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+ColumnLimit: 59
+...

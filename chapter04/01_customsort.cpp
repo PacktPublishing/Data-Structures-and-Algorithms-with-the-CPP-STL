@@ -17,9 +17,9 @@ struct Person {
 };
 
 int main() {
-  std::vector<Person> people = {Person("Regan", 40),
-                                Person("Lisa", 30),
-                                Person("Corbin", 25)};
+  std::vector<Person> people = {Person("Regan", 30),
+                                Person("Lisa", 40),
+                                Person("Corbin", 45)};
 
   auto compareByName = [](const Person &a,
                           const Person &b) {

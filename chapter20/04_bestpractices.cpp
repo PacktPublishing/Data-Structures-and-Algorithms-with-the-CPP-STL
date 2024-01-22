@@ -47,8 +47,8 @@ void performConcurrentOperations(
   std::thread reader([&concurrentContainer]() {
     for (int i = 0; i < 100; ++i) {
       if (concurrentContainer.find(i)) {
-        std::cout << "Value " << i
-                  << " found in the container\"";
+        std::cerr << "Value " << i
+                  << " found in the container.\n";
       }
     }
   });
@@ -58,8 +58,8 @@ void performConcurrentOperations(
   reader.join();
 
   // Output the final size of the container
-  std::cout << "Final size of the container: "
-            << concurrentContainer.size() << "\"";
+  std::cerr << "Final size of the container: "
+            << concurrentContainer.size() << "\n";
 }
 
 int main() {

@@ -28,21 +28,21 @@ int main() {
   // Example with numeric data
   std::vector<int> numbers = {3, 1, 4, 1, 5, 9,
                               2, 6, 5, 3, 5};
+
   sortWithPolicy(numbers.begin(), numbers.end(),
                  NumericComparison<int>());
 
-  for (int n : numbers) { std::cout << n << " "; }
+  for (auto n : numbers) { std::cout << n << " "; }
   std::cout << "\n";
 
   // Example with string data
   std::vector<std::string> strings = {
-      "apple", "pear", "banana", "cherry", "grape"};
+      "starfruit", "pear", "banana", "kumquat", "grape"};
+
   sortWithPolicy(strings.begin(), strings.end(),
                  StringComparison());
 
-  for (const auto &str : strings) {
-    std::cout << str << " ";
-  }
+  for (auto &s : strings) { std::cout << s << " "; }
   std::cout << "\n";
 
   return 0;

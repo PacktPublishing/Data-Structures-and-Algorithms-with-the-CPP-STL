@@ -4,13 +4,13 @@
 int main() {
   std::vector<int> scores = {90, 92, 97};
 
-  std::cout << "Initial scores:";
+  std::cout << "Initial scores: ";
   for (int score : scores) { std::cout << " " << score; }
   std::cout << "\n";
 
   scores.push_back(95);
 
-  std::cout << "Scores after adding 95 to the end:";
+  std::cout << "Scores after adding 95 to the end: ";
   for (int score : scores) { std::cout << " " << score; }
   std::cout << "\n";
 

@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-  std::forward_list<int> flist = {1, 2, 3, 4, 5};
+  std::forward_list<int> flist = {10, 20, 30, 40, 50};
 
   std::cout << "Original list: ";
   for (auto it = flist.begin(); it != flist.end(); ++it) {

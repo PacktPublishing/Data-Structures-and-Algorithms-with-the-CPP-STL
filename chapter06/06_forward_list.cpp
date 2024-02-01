@@ -33,9 +33,10 @@ public:
 
   bool remove(const KeyType &key) {
     auto &list = table[hash(key)];
-    return list.remove_if([&](const Bucket &bucket) {
+    list.remove_if([&](const Bucket &bucket) {
       return bucket.key == key;
     });
+    return false;
   }
 
 private:

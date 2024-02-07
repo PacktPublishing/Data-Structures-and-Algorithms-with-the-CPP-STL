@@ -1,2 +1,2 @@
-# Data-Structures-and-Algorithms-with-the-C++-STL.
-Data Structures and Algorithms with the C++ STL, Published by Packt
+# Data-Structures-and-Algorithms-with-C++-STL.
+Data Structures and Algorithms with C++ STL, Published by Packt
